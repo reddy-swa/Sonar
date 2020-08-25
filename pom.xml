@@ -27,23 +27,17 @@
     <version>0.8.5</version>
     <executions>
 	<execution>
-		<id>pre-unit-test</id>
+		<id>prepare-agent</id>
 		<goals>
 			<goal>prepare-agent</goal>
 		</goals>
-		<configuration>
-                            <destFile>${basedir}/target/jacoco.exec</destFile>
-                            <dataFile>${basedir}/target/jacoco.exec</dataFile>
-                        </configuration>
 	    </execution>
-	<execution>
-		<id>post-unit-test</id>
-		<phase>prepare-package</phase>
-		<goals>
+	    <execution>
+		    <id>report</id>
+		    <goals>
 			<goal>report</goal>
 		</goals>
-		
-	</execution>
+	    </execution>
 </executions>
 		</plugin>
 	</plugins>
