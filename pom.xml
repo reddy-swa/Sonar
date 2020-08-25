@@ -27,6 +27,10 @@
 		<goals>
 			<goal>prepare-agent</goal>
 		</goals>
+		<configuration>
+                            <destFile>${basedir}/target/jacoco.exec</destFile>
+                            <dataFile>${basedir}/target/jacoco.exec</dataFile>
+                        </configuration>
 	    </execution>
 	<execution>
 		<id>post-unit-test</id>
