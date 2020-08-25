@@ -34,6 +34,9 @@
 		<goals>
 			<goal>report</goal>
 		</goals>
+		<includes>
+                                        <include>jacoco.exec</include>
+                                    </includes>
 	</execution>
 </executions>
 		</plugin>
